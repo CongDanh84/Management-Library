@@ -1,0 +1,1 @@
+import{n as e}from"./useToast-Cu57EkQh.js";var t={getAll:()=>e.get(`/publisher`),getDetail:t=>e.get(`/publisher/${t}`),create:t=>e.post(`/publisher`,t),update:(t,n)=>e.put(`/publisher/${t}`,n),remove:t=>e.delete(`/publisher/${t}`)};export{t};

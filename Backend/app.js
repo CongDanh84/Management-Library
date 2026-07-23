@@ -26,9 +26,16 @@ app.use('/api/book', bookRoutes);
 app.use('/api/publisher', publisherRoutes);
 app.use('/api/borrow-book', bookTrackingRoutes);
 
-app.use((req, res) => {
+app.use('/api', (req, res) => {
     res.status(404).json({ message: 'Route không tồn tại' });
 });
+
+app.use(express.static(path.join(__dirname,"src", "dist")));
+
+app.get("/*splat", (req, res) => {
+    res.sendFile(path.join(__dirname, "src", "dist", "index.html"));
+});
+
 
 app.use(errorMiddleware);
 

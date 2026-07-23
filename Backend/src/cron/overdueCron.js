@@ -3,7 +3,7 @@ const TheoDoiMuonSach = require('../models/BookTracking');
 
 const danhDauQuaHan = async () => {
     const now = new Date();
-    console.log("NOW:", now);
+
 
     const ketQua = await TheoDoiMuonSach.updateMany(
         {

@@ -1,0 +1,1 @@
+import{n as e}from"./useToast-Cu57EkQh.js";var t={registerReader:t=>e.post(`/auth/reader/register`,t),loginReader:t=>e.post(`/auth/reader/login`,t),loginStaff:t=>e.post(`/auth/staff/login`,t),registerStaff:t=>e.post(`/auth/staff/register`,t),refreshToken:()=>e.post(`/auth/refresh-token`,{}),logout:()=>e.post(`/auth/logout`,{})};export{t};
